@@ -1,41 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Page</title>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/index.css" />
 </head>
-<body background="LoginBG.svg">
-    <center>
-        <header> 
-                <div class="logo">
-                   <img src="assets/logo.jpg" alt="" weight="180" height="80">
-                </div>
-        </header>
-        <main>
-            <h2>Login</h2>
-            <form action="index.html" method="post">
-                <table border="0" bgcolor="white">
-                    <tr>
-                        <td>Username :</td>
-                        <td>
-                            <input type="text" name="user">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Password :</td>
-                        <td>
-                            <input type="password" name="pass">
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <button type="submit">Login</button>
-                <br><br>
-                Belum daftar? <a href="register.html">Register</a>
-            </form>
-        </main>
-
-    </center>
-    
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html" class="btn_register">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="center">
+        <div class="form-login">
+          <h3>Login</h3>
+          <form action="">
+            <input class="input" type="text" name="username" placeholder="Username" />
+            <input class="input" type="password" name="password" placeholder="Password" />
+            <button type="submit" class="btn_login" name="login" id="login">Login</button>
+          </form>
+          <a href="register.html" class="link-register">Register Here</a>
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
