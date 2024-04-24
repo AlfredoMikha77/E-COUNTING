@@ -26,13 +26,54 @@
                 E-Counting
             </h1>
             <p>Konsultan Akutansi Terpercaya</p>
-            <img src="assets/home.jpg" alt="background" height="350">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="slide">
+                        <img class="slide-image" src="assets/slide1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-image" src="assets/slide2.jpeg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-image" src="assets/slide3.jpeg" alt="Slide 3">
+                    </div>
+                </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        
+            <script>
+                var slideIndex = 1;
+            
+                function showSlides(n) {
+                    var slides = document.getElementsByClassName("slide");
+            
+                    if (n > slides.length) {
+                        slideIndex = 1;
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length;
+                    }
+            
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+            
+                    slides[slideIndex - 1].style.display = "block";
+                }
+            
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+            
+                showSlides(slideIndex);
+            </script>
         </center>
         <div class="single-page">
             <div class="site">
                 <h2>Pentingnya Jasa Akuntan yang berkualitas</h2>
                 <p>
-                    Dengan jasa akuntan yang berkualitas, bisnis Anda akan mendapatkan lebih dari sekadar pencatatan keuangan. Kami menawarkan pemahaman mendalam tentang industri Anda, kepatuhan terhadap regulasi yang berlaku, dan analisis keuangan yang mendalam untuk membantu Anda mengoptimalkan kinerja keuangan dan mengambil keputusan yang tepat. Dengan fokus pada pengendalian risiko dan optimalisasi keuangan, kami bertujuan untuk membantu bisnis Anda mencapai tujuan mereka dengan lebih efisien dan efektif. Dengan layanan kami, Anda dapat memiliki keyakinan bahwa aspek keuangan bisnis Anda ditangani dengan cermat dan profesional, memberi Anda ruang untuk berkembang dan berkonsentrasi pada pertumbuhan bisnis Anda.</p>
+                    Dengan jasa akuntan yang berkualitas, bisnis Anda akan mendapatkan lebih dari sekadar pencatatan keuangan. Kami menawarkan pemahaman mendalam tentang industri Anda, kepatuhan terhadap regulasi yang berlaku, dan analisis keuangan yang mendalam untuk membantu Anda mengoptimalkan kinerja keuangan dan mengambil keputusan yang tepat. Dengan fokus pada pengendalian risiko dan optimalisasi keuangan, kami bertujuan untuk membantu bisnis Anda mencapai tujuan mereka dengan lebih efisien dan efektif. Dengan layanan kami, Anda dapat memiliki keyakinan bahwa aspek keuangan bisnis Anda ditangani dengan cermat dan profesional, memberi Anda ruang untuk berkembang </p>
                 <img src="assets/akuntansi.jpg" alt="" height="200">
             </div>
             <div class="site">
@@ -41,20 +82,9 @@
                 <img src="assets/akuntan.webp" alt="" height="200">
             </div>
         </div>
-         <!-- Struktur Carousel -->
-    <div class="carousel-container">
-        <div class="carousel-slide">
-            <img src="assets/slide1.jpg" alt="Slide 1">
-        </div>
-        <div class="carousel-slide">
-            <img src="assets/slide2.jpeg" alt="Slide 2">
-        </div>
-        <div class="carousel-slide">
-            <img src="assets/slide3.jpeg" alt="Slide 3">
-        </div>
-        <!-- Tambahkan slide sesuai kebutuhan -->
+   
     </div>
-    <!-- Akhir Struktur Carousel -->
+  
         <div class="container">
             <h1>Mengapa HARUS E-COUNTNG</h1>
         </div>
@@ -101,16 +131,6 @@
         });
     </script>
     
-    <script>
-        var slides = document.querySelectorAll('.carousel-slide');
-        var currentSlide = 0;
-        var slideInterval = setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
     
-        function nextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-    </script>
 </body>
 </html>
