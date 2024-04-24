@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/ecount.jpeg">
     <title>E-Counting</title>
-   
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* Add CSS to style the popup box */
+        .popup-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            display: none; /* Hide popup by default */
+        }
+        .popup-box .popup-content {
+            text-align: center;
+        }
+        .popup-box h2 {
+            margin-top: 0;
+        }
+        .popup-box a {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="assets/ecount.jpeg" alt="" weight="80" height="80">
         </div>
-        
         <div class="navbar">
             <a href="index.html">Home</a>
             <a href="admin.html">Service</a>
-            <a href="Login.html">Login</a>
+            <!-- Change the id of login button to trigger the popup -->
+            <a href="#" id="loginBtn">Login</a>
         </div>
     </header>
     <main>
@@ -38,42 +61,34 @@
                         <img class="slide-image" src="assets/slide3.jpeg" alt="Slide 3">
                     </div>
                 </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        
             <script>
                 var slideIndex = 1;
-            
                 function showSlides(n) {
                     var slides = document.getElementsByClassName("slide");
-            
                     if (n > slides.length) {
                         slideIndex = 1;
                     }
                     if (n < 1) {
                         slideIndex = slides.length;
                     }
-            
                     for (var i = 0; i < slides.length; i++) {
                         slides[i].style.display = "none";
                     }
-            
                     slides[slideIndex - 1].style.display = "block";
                 }
-            
                 function plusSlides(n) {
                     showSlides(slideIndex += n);
                 }
-            
                 showSlides(slideIndex);
             </script>
         </center>
         <div class="single-page">
             <div class="site">
                 <h2>Pentingnya Jasa Akuntan yang berkualitas</h2>
-                <p>
-                    Dengan jasa akuntan yang berkualitas, bisnis Anda akan mendapatkan lebih dari sekadar pencatatan keuangan. Kami menawarkan pemahaman mendalam tentang industri Anda, kepatuhan terhadap regulasi yang berlaku, dan analisis keuangan yang mendalam untuk membantu Anda mengoptimalkan kinerja keuangan dan mengambil keputusan yang tepat. Dengan fokus pada pengendalian risiko dan optimalisasi keuangan, kami bertujuan untuk membantu bisnis Anda mencapai tujuan mereka dengan lebih efisien dan efektif. Dengan layanan kami, Anda dapat memiliki keyakinan bahwa aspek keuangan bisnis Anda ditangani dengan cermat dan profesional, memberi Anda ruang untuk berkembang </p>
+                <p>Dengan jasa akuntan yang berkualitas, bisnis Anda akan mendapatkan lebih dari sekadar pencatatan keuangan. Kami menawarkan pemahaman mendalam tentang industri Anda, kepatuhan terhadap regulasi yang berlaku, dan analisis keuangan yang mendalam untuk membantu Anda mengoptimalkan kinerja keuangan dan mengambil keputusan yang tepat. Dengan fokus pada pengendalian risiko dan optimalisasi keuangan, kami bertujuan untuk membantu bisnis Anda mencapai tujuan mereka dengan lebih efisien dan efektif. Dengan layanan kami, Anda dapat memiliki keyakinan bahwa aspek keuangan bisnis Anda ditangani dengan cermat dan profesional, memberi Anda ruang untuk berkembang</p>
                 <img src="assets/akuntansi.jpg" alt="" height="200">
             </div>
             <div class="site">
@@ -82,9 +97,6 @@
                 <img src="assets/akuntan.webp" alt="" height="200">
             </div>
         </div>
-   
-    </div>
-  
         <div class="container">
             <h1>Mengapa HARUS E-COUNTNG</h1>
         </div>
@@ -98,19 +110,18 @@
                     <h3>Akuntan profesional</h3>
                     <p>Dengan dedikasi penuh, kami memastikan kepuasan pelanggan sebagai prioritas utama. Layanan kami mencakup berbagai aspek, mulai dari jasa akuntansi, pelaporan pajak, hingga audit keuangan, semuanya disajikan dengan profesionalitas dan ketelitian tinggi.</p>
                 </td>
-                <td>   
+            </tr>
+            <tr>
                 <td>
                     <h3>Hemat dan Terjangkau</h3>
-                <p>Kami menyadari pentingnya efisiensi dalam bisnis Anda. Dengan bantuan konsultan akuntansi dan pajak kami, Anda tidak hanya dapat menghemat biaya, tetapi juga waktu berharga Anda, sehingga Anda dapat fokus pada pengembangan bisnis Anda tanpa khawatir tentang urusan keuangan.</p>
+                    <p>Kami menyadari pentingnya efisiensi dalam bisnis Anda. Dengan bantuan konsultan akuntansi dan pajak kami, Anda tidak hanya dapat menghemat biaya, tetapi juga waktu berharga Anda, sehingga Anda dapat fokus pada pengembangan bisnis Anda tanpa khawatir tentang urusan keuangan.</p>
                 </td>
                 <td>
                     <h3>Berpengalaman</h3>
-                <p>Dipandu oleh tim yang berpengalaman, kami telah membantu berbagai bisnis untuk mencapai keberhasilan finansial. Dengan pemahaman mendalam tentang dinamika bisnis dan peraturan perpajakan yang berlaku, kami siap memberikan solusi yang sesuai dengan kebutuhan spesifik bisnis Anda.</p>
+                    <p>Dipandu oleh tim yang berpengalaman, kami telah membantu berbagai bisnis untuk mencapai keberhasilan finansial. Dengan pemahaman mendalam tentang dinamika bisnis dan peraturan perpajakan yang berlaku, kami siap memberikan solusi yang sesuai dengan kebutuhan spesifik bisnis Anda.</p>
                 </td>
-                
             </tr>
         </table>
-        <!-- Penambahan DOM -->
         <div class="container">
             <p>Belum memiliki akun? Daftar sekarang!</p>
             <button id="registerBtn" class="btn_register">Daftar Sekarang!</button>
@@ -120,17 +131,33 @@
         <div class="footer">
         </div>
     </footer>
-    <script>
-        // Tangkap tombol daftar
-        var registerBtn = document.getElementById("registerBtn");
+    
+    <!-- Add popup box after the footer -->
+    <div id="popupBox" class="popup-box">
+        <div class="popup-content">
+            <h2>Belum punya akun?</h2>
+            <p>Silakan daftar terlebih dahulu untuk mengakses layanan kami.</p>
+            <a href="register.html" class="btn_register">Daftar Sekarang!</a>
+        </div>
+    </div>
 
-        // Tambahkan event listener untuk saat tombol di klik
-        registerBtn.addEventListener("click", function() {
-            // Redirect ke halaman pendaftaran
-            window.location.href = "register.html"; // Ubah link sesuai dengan halaman pendaftaran Anda
+    <script>
+        // Add JavaScript to show the popup box when the login button is clicked
+        var loginBtn = document.getElementById("loginBtn");
+        loginBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            document.getElementById('popupBox').style.display = 'block'; // Show popup box
+        });
+
+        // Add JavaScript to hide the popup box when the register button is clicked
+        document.getElementById('registerBtn').addEventListener('click', function() {
+            document.getElementById('popupBox').style.display = 'none';
+        });
+
+        // Add JavaScript for the onload event to hide the popup box when the page is loaded
+        window.addEventListener('load', function() {
+            document.getElementById('popupBox').style.display = 'none';
         });
     </script>
-    
-    
 </body>
 </html>
