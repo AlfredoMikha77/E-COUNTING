@@ -37,8 +37,8 @@
             <img src="assets/ecount.jpeg" alt="" weight="80" height="80">
         </div>
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="admin.html">Service</a>
+            <a href="index.php">Home</a>
+            <a href="admin.php">Service</a>
             <!-- Change the id of login button to trigger the popup -->
             <a href="#" id="loginBtn">Login</a>
         </div>
@@ -137,7 +137,7 @@
         <div class="popup-content">
             <h2>Belum punya akun?</h2>
             <p>Silakan daftar terlebih dahulu untuk mengakses layanan kami.</p>
-            <a href="register.html" class="btn_register">Daftar Sekarang!</a>
+            <a href="register.php" class="btn_register">Daftar Sekarang!</a>
         </div>
     </div>
 

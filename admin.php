@@ -12,7 +12,7 @@
       <span class="admin-text">Admin</span>
     </div>
     <div class="logout-button">
-      <a href="login.html" class="logout-link">
+      <a href="login.php" class="logout-link">
         <i class='bx bx-log-out'></i>
         <span class="logout-text">Log out</span>
       </a>
@@ -24,19 +24,19 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="admin.html" class="active">
+        <a href="admin.php" class="active">
           <i class='bx bx-grid-alt'></i>
           <span class="links_name">Dashboard</span>
         </a>
       </li>
       <li>
-        <a href="layanan.html">
+        <a href="layanan.php">
           <i class='bx bx-box'></i>
           <span class="links_name">Layanan</span>
         </a>
       </li>
       <li>
-        <a href="transaksi.html">
+        <a href="transaksi.php">
           <i class='bx bx-list-ul'></i>
           <span class="links_name">Transaksi</span>
         </a>

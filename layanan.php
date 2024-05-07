@@ -58,11 +58,11 @@
         }
 
         function goToAdmin() {
-            window.location.href = "admin.html"; 
+            window.location.href = "admin.php"; 
         }
 
         function goToTambahData() {
-            window.location.href = "tambah.html"; 
+            window.location.href = "tambah.php"; 
         }
     </script>
 </body>

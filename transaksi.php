@@ -45,7 +45,7 @@
 
     <script>
         function goToAdmin() {
-            window.location.href = "admin.html"; // Redirect ke halaman admin
+            window.location.href = "admin.php"; // Redirect ke halaman admin
         }
     </script>
 </body>

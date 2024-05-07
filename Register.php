@@ -25,8 +25,8 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="login.html" class="btn_login">Login</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="login.php" class="btn_login">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -63,8 +63,8 @@
     // Add JavaScript to hide the popup box when the login button is clicked
     document.getElementById('loginBtn').addEventListener('click', function() {
       document.getElementById('popupBox').style.display = 'none';
-      // Redirect to login.html
-      window.location.href = 'login.html';
+      // Redirect to login.php
+      window.location.href = 'login.php';
     });
   </script>
 </body>

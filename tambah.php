@@ -41,7 +41,7 @@
 
     <script>
         function simpanData() {
-            // Lakukan logika untuk menyimpan data ke halaman Layanan (layanan.html)
+            // Lakukan logika untuk menyimpan data ke halaman Layanan (layanan.php)
             // Serta tampilkan notifikasi "Data berhasil disimpan"
             alert("Data berhasil disimpan");
         }
@@ -52,8 +52,8 @@
         }
 
         function kembali() {
-            // Kembali ke halaman Layanan (layanan.html)
-            window.location.href = "layanan.html";
+            // Kembali ke halaman Layanan (layanan.php)
+            window.location.href = "layanan.php";
         }
     </script>
 </body>
