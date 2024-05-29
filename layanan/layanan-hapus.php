@@ -40,17 +40,23 @@
 		</a>
 	   </li>
 	   <li>
-		<a href="../layanan/layanan.php" class="active">
+		<a href="../transaction/transaction.php">
 		   <i ></i>
-		   <span class="links_name">Layanan</span>
+		   <span class="links_name">Layanan Transaksi</span>
 		</a>
 	   </li>
 	   <li>
-		<a href="../transaction/transaction.php">
-		   <i ></i>
-		   <span class="links_name">Transaksi</span>
-		</a>
-	   </li>
+                <a href="penyedia/penyedia.php">
+                    <i></i>
+                    <span class="links_name">Penyedia</span>
+                </a>
+            </li>
+			<li>
+                <a href="cetak-transaksi-penyedia/transaksi-penyedia.php">
+                    <i></i>
+                    <span class="links_name">Transaksi Penyedia</span>
+                </a>
+            </li>
 	   <li>
 		<a href="../logout.php">
 		   <i ></i>

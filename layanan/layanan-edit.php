@@ -54,6 +54,18 @@
         </a>
       </li>
       <li>
+                <a href="penyedia/penyedia.php">
+                    <i></i>
+                    <span class="links_name">Penyedia</span>
+                </a>
+            </li>
+			<li>
+                <a href="cetak-transaksi-penyedia/transaksi-penyedia.php">
+                    <i></i>
+                    <span class="links_name">Transaksi Penyedia</span>
+                </a>
+            </li>
+      <li>
         <a href="../logout.php">
         <i ></i>
           <span class="links_name">Log out</span>

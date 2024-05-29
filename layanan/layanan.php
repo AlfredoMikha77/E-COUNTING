@@ -26,18 +26,25 @@ if ($_SESSION['username'] == null) {
 					<span class="links_name">Dashboard</span>
 				</a>
 			</li>
-			<li>
-				<a href="../layanan/layanan.php">
-					<i ></i>
-					<span class="links_name">Layanan</span>
-				</a>
-			</li>
+			
 			<li>
 				<a href="../transaction/transaction.php">
 					<i ></i>
-					<span class="links_name">Transaksi</span>
+					<span class="links_name">Layanan Transaksi</span>
 				</a>
 			</li>
+			<li>
+                <a href="../penyedia/penyedia.php">
+                    <i></i>
+                    <span class="links_name">Penyedia</span>
+                </a>
+            </li>
+			<li>
+                <a href="../cetak-transaksi-penyedia/transaksi-penyedia.php">
+                    <i></i>
+                    <span class="links_name">Transaksi Penyedia</span>
+                </a>
+            </li>
 			<li>
 				<a href="../logout.php">
 					<i ></i>
